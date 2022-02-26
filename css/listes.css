@@ -1,0 +1,31 @@
+main {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main h1 {
+  margin-bottom: 15px;
+}
+main table {
+  border: 1px solid black;
+  padding: 5px;
+}
+main table th {
+  border: 1px solid black;
+  padding: 5px 15px;
+}
+main table td {
+  border: 1px solid black;
+  padding: 5px 15px;
+}
+main .crud {
+  margin-top: 2rem;
+  text-align: center;
+}
+main .crud a {
+  text-decoration: none;
+  color: red;
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
+}/*# sourceMappingURL=listes.css.map */
