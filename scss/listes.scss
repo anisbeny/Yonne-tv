@@ -1,0 +1,38 @@
+main {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    h1 {
+        margin-bottom: 15px;
+    }
+
+    table {
+        border: 1px solid black;
+        padding: 5px;
+
+        th {
+            border: 1px solid black;
+            padding: 5px 15px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px 15px;
+        }
+    }
+
+    .crud {
+        margin-top: 2rem;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: red;
+            background-color: black;
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+    }
+}

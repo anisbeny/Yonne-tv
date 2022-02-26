@@ -1,0 +1,60 @@
+%init{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+%body{
+   
+    background-color: #100e0f;
+    overflow-x: hidden;
+}
+%flexNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%adhesion{
+        padding: .4rem;
+        max-height: 4rem;
+        max-width: 7rem;
+        border-radius: 20px;
+        border: #100e0f solid 1px;
+        background: linear-gradient(90deg, rgba(106, 102, 101, .7) 26%, rgba(0, 0, 0, .1) 100%);
+        cursor: pointer;
+}
+%flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flexCenterColumn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+%underline{
+    color: #f25c19;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    height: 5px;
+    background-color: #f25c19;
+    border-radius: 5px;
+}
+%card{
+margin: 30px 20px 10px 20px;
+border-radius: 5px;
+box-shadow: 5px 5px 10px $black;
+}
+%title{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 2.5rem;
+    text-align: center;
+    color:white;
+    font-family: 'Roboto Slab', serif; 
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow:2px 2px 5px#00AF04 ;
+}

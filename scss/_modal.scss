@@ -1,0 +1,100 @@
+main {
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 3;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+
+        .modal-content {
+            background-color: #242222;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #888;
+            width: 80%;
+
+            .titre {
+                text-align: center;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                margin-top: 3rem;
+            }
+
+            .text_areas {
+                margin: auto;
+                max-width: 90%;
+
+                @media (min-width: 1300px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                textarea {
+                    max-width: 100%;
+                    padding: .5rem;
+                    margin: .5rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                    border-radius: 5px;
+                    resize: none;
+                    font-size: 18px;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                margin: auto;
+                max-width: 90%;
+                margin-top: 1rem;
+
+                p {
+                    align-self: center;
+                }
+
+                button {
+                    background-color: #242222;
+                    color: #00AF04;
+                    padding: .5rem;
+                    margin: .5rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                    border-radius: 5px;
+                }
+
+                .parcourir {
+                    margin-left: .5rem;
+                }
+            }
+
+            .send {
+                flex-direction: row-reverse;
+                margin-top: 1rem;
+            }
+
+            .close {
+                color: #fff;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+
+                &:hover,
+                &:focus {
+                    color: #ff64d0;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+
+            .tel {
+                margin-top: 1rem;
+                font-size: 12px;
+            }
+        }
+    }
+}

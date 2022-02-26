@@ -1,0 +1,102 @@
+@import "variables";
+@import "extends";
+@import "mixins";
+@import "navbar";
+@import "modal";
+@import "footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #100E0F;
+}
+main{
+    color: white;
+    h1{
+       @extend %title;
+    }
+    h2{
+        text-align: center;
+        text-decoration: underline;
+      margin: 10px;
+    }
+    
+    p{
+     margin: 20px;
+    }
+    
+    ul{
+    margin-left: 50px;
+    }
+    
+}
+ 
+        
+        .formulaire{
+            border: solid 3px green;
+            border-radius: 15px;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 15px;
+            div{
+                margin: 15px;
+                h2{
+                    text-align: center;
+                    color: white;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    
+
+
+
+@media screen and (min-width:768px){
+    main{
+        width: 75%;
+        margin: auto;
+        h2{
+            margin-left: 25px;
+        }
+       p{
+           margin-left: 35px;
+       }
+    }
+        .formulaire{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            div{
+                margin: 15px;
+                display: flex;
+                flex-direction: column;
+              h2{
+                  margin-bottom: 15px;
+              }
+            }
+        }
+  
+  
+}
+
+@media screen and (min-width:1080px){
+
+    main{
+       width: 50%;
+    }
+    .formulaire{
+       width: 50%;
+        div{
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+          h2{
+              margin-bottom: 15px;
+          }
+        }
+    }
+}
